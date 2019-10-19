@@ -11,6 +11,8 @@ import SwiftUI
 struct HanView: View {
     @ObservedObject var thisTime = TheTime()
     
+    var face: String
+    
     var body: some View {
         let hours = self.thisTime.hour
         let minutes = self.thisTime.minute
@@ -19,7 +21,7 @@ struct HanView: View {
         let day = self.thisTime.day
         
         return ZStack {
-            Image("han_solo_watch_face")
+            Image("\(face)_watch_face")
             
             Text(String(day))
                 .font(.subheadline)
@@ -27,18 +29,13 @@ struct HanView: View {
                 .foregroundColor(Color.black)
                 .offset(x: 47)
             
-            Image("minuteHand")
-                .offset(y: -35)
-                .frame(width: 22, height: 164)
+            Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minutes * 6))
             
-            Image("hourHand")
-                .offset(y: -20)
-                .frame(width: 22, height: 104)
+            Image("\(face)_hands_hour")
                 .rotationEffect(.degrees((hours * 30 + minutes/2)))
             
-            Image("secondHand")
-                .offset(y: -70)
+            Image("\(face)_hands_second")
                 .rotationEffect(.degrees(seconds * 6))
         }
         .offset(y: 15)
@@ -47,6 +44,6 @@ struct HanView: View {
 
 struct HanView_Previews: PreviewProvider {
     static var previews: some View {
-        HanView()
+        HanView(face: "han")
     }
 }

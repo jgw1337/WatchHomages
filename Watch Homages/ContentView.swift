@@ -4,11 +4,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             return List {
-                NavigationLink(destination: HanView()) {
+                NavigationLink(destination: HanView(face: "han")) {
                     Text("Han Solo")
                 }
-
-                Text("Luke Skywalker")
+                NavigationLink(destination: HanView(face: "luke")) {
+                    Text("Luke Skywalker")
+                }
 
                 Text("Darth Vader")
             }
