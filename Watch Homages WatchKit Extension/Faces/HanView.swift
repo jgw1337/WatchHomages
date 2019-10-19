@@ -12,8 +12,12 @@ struct HanView: View {
     @ObservedObject var thisTime = TheTime()
     
     var face: String
+    var show_complications: Bool
     
     var body: some View {
+        let month = self.thisTime.month
+        let weekday = self.thisTime.weekday
+        
         let hours = self.thisTime.hour
         let minutes = self.thisTime.minute
         let seconds = self.thisTime.second
@@ -28,6 +32,14 @@ struct HanView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
                 .offset(x: 47)
+            
+            Image("\(face)_hands_complication")
+                .rotationEffect(.degrees((weekday * 51.4)))
+                .offset(y: -35)
+            
+            Image("\(face)_hands_complication")
+                .rotationEffect(.degrees((month * 30)))
+                .offset(y: 35)
             
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minutes * 6))
@@ -44,6 +56,6 @@ struct HanView: View {
 
 struct HanView_Previews: PreviewProvider {
     static var previews: some View {
-        HanView(face: "han")
+        HanView(face: "luke", show_complications: true)
     }
 }
