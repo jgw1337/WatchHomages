@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3158191235C41D600D4BE81 /* WatchMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3158190235C41D600D4BE81 /* WatchMovement.swift */; };
+		D3158192235C420500D4BE81 /* WatchMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3158190235C41D600D4BE81 /* WatchMovement.swift */; };
 		D344500B235A67730018FCDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344500A235A67730018FCDC /* AppDelegate.swift */; };
 		D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344500C235A67730018FCDC /* SceneDelegate.swift */; };
 		D344500F235A67730018FCDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344500E235A67730018FCDC /* ContentView.swift */; };
@@ -71,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D3158190235C41D600D4BE81 /* WatchMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMovement.swift; sourceTree = "<group>"; };
 		D3445007235A67730018FCDC /* Watch Homages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Homages.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D344500A235A67730018FCDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D344500C235A67730018FCDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 				D3445018235A677A0018FCDC /* Info.plist */,
 				D3445012235A677A0018FCDC /* Preview Content */,
 				D344504B235A74C20018FCDC /* TheTime.swift */,
+				D3158190235C41D600D4BE81 /* WatchMovement.swift */,
 			);
 			path = "Watch Homages";
 			sourceTree = "<group>";
@@ -326,6 +330,7 @@
 				D344500B235A67730018FCDC /* AppDelegate.swift in Sources */,
 				D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */,
 				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
+				D3158191235C41D600D4BE81 /* WatchMovement.swift in Sources */,
 				D344500F235A67730018FCDC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +343,7 @@
 				D3445032235A677D0018FCDC /* HostingController.swift in Sources */,
 				D3445030235A677D0018FCDC /* ContentView.swift in Sources */,
 				D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */,
+				D3158192235C420500D4BE81 /* WatchMovement.swift in Sources */,
 				D3445034235A677D0018FCDC /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

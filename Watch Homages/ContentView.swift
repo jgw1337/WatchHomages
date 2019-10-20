@@ -4,10 +4,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             return List {
-                NavigationLink(destination: WatchFaceView(face: "han", show_complications: false)) {
+                NavigationLink(destination: WatchFaceView(face: "han", showComplications: false, movement: WatchMovement.quartz)) {
                     Text("Han Solo")
                 }
-                NavigationLink(destination: WatchFaceView(face: "luke", show_complications: true)) {
+                NavigationLink(destination: WatchFaceView(face: "luke", showComplications: true, movement: WatchMovement.mecahnical)) {
                     Text("Luke Skywalker")
                 }
             }

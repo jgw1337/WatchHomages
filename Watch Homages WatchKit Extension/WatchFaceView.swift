@@ -12,7 +12,8 @@ struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
     
     var face: String
-    var show_complications: Bool
+    var showComplications: Bool
+    var movement: WatchMovement
     
     var body: some View {
         let month = self.thisTime.month
@@ -20,8 +21,12 @@ struct WatchFaceView: View {
         
         let hours = self.thisTime.hour
         let minutes = self.thisTime.minute
-        let seconds = self.thisTime.second
-        
+
+        var seconds = self.thisTime.secondQuartzMovement
+        if movement == WatchMovement.mecahnical {
+            seconds = self.thisTime.secondMecahnicalMovement
+        }
+
         let day = self.thisTime.day
         
         return ZStack {
@@ -56,6 +61,6 @@ struct WatchFaceView: View {
 
 struct HanView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchFaceView(face: "luke", show_complications: true)
+        WatchFaceView(face: "luke", showComplications: true, movement: WatchMovement.mecahnical)
     }
 }

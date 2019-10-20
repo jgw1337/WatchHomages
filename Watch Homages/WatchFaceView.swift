@@ -4,16 +4,21 @@ struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
     
     var face = "han"
-    var show_complications: Bool
-    
+    var showComplications: Bool
+    var movement: WatchMovement
+
     var body: some View {
         let month = self.thisTime.month
         let weekday = self.thisTime.weekday
         
         let hours = self.thisTime.hour
         let minutes = self.thisTime.minute
-        let seconds = self.thisTime.second
-        
+
+        var seconds = self.thisTime.secondQuartzMovement
+        if movement == WatchMovement.mecahnical {
+            seconds = self.thisTime.secondMecahnicalMovement
+        }
+
         let day = self.thisTime.day
         
         return ZStack {
@@ -27,7 +32,7 @@ struct WatchFaceView: View {
                 .foregroundColor(Color.black)
                 .offset(x: 93)
             
-            if show_complications {
+            if showComplications {
                 Image("\(face)_hands_complication")
                     .rotationEffect(.degrees((weekday * 51.4)))
                     .offset(y: -70)
@@ -51,6 +56,6 @@ struct WatchFaceView: View {
 
 struct HanView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchFaceView(face: "luke", show_complications: true)
+        WatchFaceView(face: "luke", showComplications: true, movement: WatchMovement.mecahnical)
     }
 }
