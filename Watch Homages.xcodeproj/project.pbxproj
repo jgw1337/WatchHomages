@@ -28,6 +28,8 @@
 		D344504C235A74C20018FCDC /* TheTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504B235A74C20018FCDC /* TheTime.swift */; };
 		D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504D235A974B0018FCDC /* WatchFaceView.swift */; };
 		D3445052235A999C0018FCDC /* TheTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504B235A74C20018FCDC /* TheTime.swift */; };
+		D35FFF16235CCECC00D40F9A /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FFF15235CCECC00D40F9A /* WatchFace.swift */; };
+		D35FFF17235CCEE300D40F9A /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FFF15235CCECC00D40F9A /* WatchFace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,7 @@
 		D3445049235A74AB0018FCDC /* WatchFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceView.swift; sourceTree = "<group>"; };
 		D344504B235A74C20018FCDC /* TheTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTime.swift; sourceTree = "<group>"; };
 		D344504D235A974B0018FCDC /* WatchFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceView.swift; sourceTree = "<group>"; };
+		D35FFF15235CCECC00D40F9A /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,7 @@
 				D3445012235A677A0018FCDC /* Preview Content */,
 				D344504B235A74C20018FCDC /* TheTime.swift */,
 				D3158190235C41D600D4BE81 /* WatchMovement.swift */,
+				D35FFF15235CCECC00D40F9A /* WatchFace.swift */,
 			);
 			path = "Watch Homages";
 			sourceTree = "<group>";
@@ -331,6 +335,7 @@
 				D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */,
 				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
 				D3158191235C41D600D4BE81 /* WatchMovement.swift in Sources */,
+				D35FFF16235CCECC00D40F9A /* WatchFace.swift in Sources */,
 				D344500F235A67730018FCDC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +349,7 @@
 				D3445030235A677D0018FCDC /* ContentView.swift in Sources */,
 				D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */,
 				D3158192235C420500D4BE81 /* WatchMovement.swift in Sources */,
+				D35FFF17235CCEE300D40F9A /* WatchFace.swift in Sources */,
 				D3445034235A677D0018FCDC /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,4 @@
 //
-//  HanView.swift
-//  Watch Homages WatchKit Extension
-//
-//  Created by Dilek Sanver-Wang on 10/18/19.
 //  Copyright © 2019 jgw. All rights reserved.
 //
 
@@ -11,21 +7,19 @@ import SwiftUI
 struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
     
-    var face: String
-    var showComplications: Bool
-    var movement: WatchMovement
+    var face: WatchFace = .han
+    var showComplications: Bool = false
+    var movement: WatchMovement = .quartz
     
     var body: some View {
         let month = self.thisTime.month
         let weekday = self.thisTime.weekday
         
-        let hours = self.thisTime.hour
-        let minutes = self.thisTime.minute
-
-        var seconds = self.thisTime.secondQuartzMovement
-        if movement == WatchMovement.mecahnical {
-            seconds = self.thisTime.secondMecahnicalMovement
-        }
+        let hour = self.thisTime.hour
+        let minute = self.thisTime.minute
+        let second = movement == .mechanical ?
+            self.thisTime.secondMecahnicalMovement :
+            self.thisTime.secondQuartzMovement
 
         let day = self.thisTime.day
         
@@ -47,20 +41,20 @@ struct WatchFaceView: View {
                 .offset(y: 35)
             
             Image("\(face)_hands_minute")
-                .rotationEffect(.degrees(minutes * 6))
+                .rotationEffect(.degrees(minute * 6))
             
             Image("\(face)_hands_hour")
-                .rotationEffect(.degrees((hours * 30 + minutes/2)))
+                .rotationEffect(.degrees((hour * 30 + minute/2)))
             
             Image("\(face)_hands_second")
-                .rotationEffect(.degrees(seconds * 6))
+                .rotationEffect(.degrees(second * 6))
         }
         .offset(y: 15)
     }
 }
 
-struct HanView_Previews: PreviewProvider {
+struct WatchFaceView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchFaceView(face: "luke", showComplications: true, movement: WatchMovement.mecahnical)
+        WatchFaceView(face: .luke, showComplications: true, movement: .mechanical)
     }
 }
