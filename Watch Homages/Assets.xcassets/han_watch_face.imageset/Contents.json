@@ -12,6 +12,11 @@
     {
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "watch",
+      "filename" : "han_watch_face.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

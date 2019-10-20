@@ -12,6 +12,11 @@
     {
       "idiom" : "universal",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "watch",
+      "filename" : "luke_hands_hour-1.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
