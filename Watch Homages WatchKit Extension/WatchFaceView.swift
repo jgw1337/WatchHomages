@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct HanView: View {
+struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
     
     var face: String
@@ -56,6 +56,6 @@ struct HanView: View {
 
 struct HanView_Previews: PreviewProvider {
     static var previews: some View {
-        HanView(face: "luke", show_complications: true)
+        WatchFaceView(face: "luke", show_complications: true)
     }
 }

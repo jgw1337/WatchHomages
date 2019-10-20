@@ -22,9 +22,9 @@
 		D3445034235A677D0018FCDC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3445033235A677D0018FCDC /* ExtensionDelegate.swift */; };
 		D3445036235A67800018FCDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3445035235A67800018FCDC /* Assets.xcassets */; };
 		D3445039235A67800018FCDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3445038235A67800018FCDC /* Preview Assets.xcassets */; };
-		D344504A235A74AB0018FCDC /* HanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3445049235A74AB0018FCDC /* HanView.swift */; };
+		D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3445049235A74AB0018FCDC /* WatchFaceView.swift */; };
 		D344504C235A74C20018FCDC /* TheTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504B235A74C20018FCDC /* TheTime.swift */; };
-		D344504E235A974B0018FCDC /* HanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504D235A974B0018FCDC /* HanView.swift */; };
+		D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504D235A974B0018FCDC /* WatchFaceView.swift */; };
 		D3445052235A999C0018FCDC /* TheTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344504B235A74C20018FCDC /* TheTime.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,9 +90,9 @@
 		D3445035235A67800018FCDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3445038235A67800018FCDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D344503A235A67800018FCDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3445049235A74AB0018FCDC /* HanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanView.swift; sourceTree = "<group>"; };
+		D3445049235A74AB0018FCDC /* WatchFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceView.swift; sourceTree = "<group>"; };
 		D344504B235A74C20018FCDC /* TheTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTime.swift; sourceTree = "<group>"; };
-		D344504D235A974B0018FCDC /* HanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanView.swift; sourceTree = "<group>"; };
+		D344504D235A974B0018FCDC /* WatchFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 		D3445009235A67730018FCDC /* Watch Homages */ = {
 			isa = PBXGroup;
 			children = (
-				D3445048235A74990018FCDC /* Faces */,
+				D3445049235A74AB0018FCDC /* WatchFaceView.swift */,
 				D344500A235A67730018FCDC /* AppDelegate.swift */,
 				D344500C235A67730018FCDC /* SceneDelegate.swift */,
 				D344500E235A67730018FCDC /* ContentView.swift */,
@@ -170,7 +170,7 @@
 		D344502E235A677D0018FCDC /* Watch Homages WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D3445053235A9A560018FCDC /* Faces */,
+				D344504D235A974B0018FCDC /* WatchFaceView.swift */,
 				D344502F235A677D0018FCDC /* ContentView.swift */,
 				D3445031235A677D0018FCDC /* HostingController.swift */,
 				D3445033235A677D0018FCDC /* ExtensionDelegate.swift */,
@@ -187,22 +187,6 @@
 				D3445038235A67800018FCDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D3445048235A74990018FCDC /* Faces */ = {
-			isa = PBXGroup;
-			children = (
-				D3445049235A74AB0018FCDC /* HanView.swift */,
-			);
-			path = Faces;
-			sourceTree = "<group>";
-		};
-		D3445053235A9A560018FCDC /* Faces */ = {
-			isa = PBXGroup;
-			children = (
-				D344504D235A974B0018FCDC /* HanView.swift */,
-			);
-			path = Faces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +325,7 @@
 				D344504C235A74C20018FCDC /* TheTime.swift in Sources */,
 				D344500B235A67730018FCDC /* AppDelegate.swift in Sources */,
 				D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */,
-				D344504A235A74AB0018FCDC /* HanView.swift in Sources */,
+				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
 				D344500F235A67730018FCDC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +337,7 @@
 				D3445052235A999C0018FCDC /* TheTime.swift in Sources */,
 				D3445032235A677D0018FCDC /* HostingController.swift in Sources */,
 				D3445030235A677D0018FCDC /* ContentView.swift in Sources */,
-				D344504E235A974B0018FCDC /* HanView.swift in Sources */,
+				D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */,
 				D3445034235A677D0018FCDC /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
