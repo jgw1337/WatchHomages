@@ -10,14 +10,11 @@ struct ContentView: View {
             NavigationLink(destination: WatchFaceView(face: .han, showComplications: false, movement: .quartz)) {
                 Text("Han (quartz)")
             }
-            NavigationLink(destination: WatchFaceView(face: .han, showComplications: false, movement: .mechanical)) {
-                Text("Han (mechanical)")
-            }
-            NavigationLink(destination: WatchFaceView(face: .luke, showComplications: true, movement: .quartz)) {
-                Text("Luke (quartz)")
-            }
             NavigationLink(destination: WatchFaceView(face: .luke, showComplications: true, movement: .mechanical)) {
                 Text("Luke (mechanical)")
+            }
+            NavigationLink(destination: WatchFaceView(face: .boba_fett, showComplications: false, movement: .quartz)) {
+                Text("Boba Fett (quartz)")
             }
         }
         .navigationBarTitle(Text("Watch Faces"))
