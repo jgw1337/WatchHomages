@@ -20,27 +20,29 @@ struct WatchFaceView: View {
         let second = movement == .mechanical ?
             self.thisTime.secondMecahnicalMovement :
             self.thisTime.secondQuartzMovement
-
+        
         let day = self.thisTime.day
         
         return ZStack {
             Image("\(face)_background")
-
+            
             Image("\(face)_watch_face")
-
+            
             Text(String(day))
-                .font(.subheadline)
+                .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
                 .offset(x: 93)
             
-            Image("\(face)_hands_complication")
-                .rotationEffect(.degrees((weekday * 51.4)))
-                .offset(y: -70)
-            
-            Image("\(face)_hands_complication")
-                .rotationEffect(.degrees((month * 30)))
-                .offset(y: 70)
+            if showComplications {
+                Image("\(face)_hands_complication")
+                    .rotationEffect(.degrees((weekday * 51.4)))
+                    .offset(y: -70)
+                
+                Image("\(face)_hands_complication")
+                    .rotationEffect(.degrees((month * 30)))
+                    .offset(y: 70)
+            }
             
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minute * 6))

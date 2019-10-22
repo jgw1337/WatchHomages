@@ -32,13 +32,15 @@ struct WatchFaceView: View {
                 .foregroundColor(Color.black)
                 .offset(x: 47)
             
-            Image("\(face)_hands_complication")
-                .rotationEffect(.degrees((weekday * 51.4)))
-                .offset(y: -35)
-            
-            Image("\(face)_hands_complication")
-                .rotationEffect(.degrees((month * 30)))
-                .offset(y: 35)
+            if showComplications {
+                Image("\(face)_hands_complication")
+                    .rotationEffect(.degrees((weekday * 51.4)))
+                    .offset(y: -35)
+                
+                Image("\(face)_hands_complication")
+                    .rotationEffect(.degrees((month * 30)))
+                    .offset(y: 35)
+            }
             
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minute * 6))
