@@ -31,6 +31,7 @@
 		D35FFF16235CCECC00D40F9A /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FFF15235CCECC00D40F9A /* WatchFace.swift */; };
 		D35FFF17235CCEE300D40F9A /* WatchFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FFF15235CCECC00D40F9A /* WatchFace.swift */; };
 		D35FFF19235CE59E00D40F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3445010235A677A0018FCDC /* Assets.xcassets */; };
+		D3A970432361582000D0C59A /* SecondsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A970422361582000D0C59A /* SecondsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		D344504B235A74C20018FCDC /* TheTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheTime.swift; sourceTree = "<group>"; };
 		D344504D235A974B0018FCDC /* WatchFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFaceView.swift; sourceTree = "<group>"; };
 		D35FFF15235CCECC00D40F9A /* WatchFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFace.swift; sourceTree = "<group>"; };
+		D3A970422361582000D0C59A /* SecondsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				D344504B235A74C20018FCDC /* TheTime.swift */,
 				D3158190235C41D600D4BE81 /* WatchMovement.swift */,
 				D35FFF15235CCECC00D40F9A /* WatchFace.swift */,
+				D3A970422361582000D0C59A /* SecondsView.swift */,
 			);
 			path = "Watch Homages";
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				D344500B235A67730018FCDC /* AppDelegate.swift in Sources */,
 				D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */,
 				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
+				D3A970432361582000D0C59A /* SecondsView.swift in Sources */,
 				D3158191235C41D600D4BE81 /* WatchMovement.swift in Sources */,
 				D35FFF16235CCECC00D40F9A /* WatchFace.swift in Sources */,
 				D344500F235A67730018FCDC /* ContentView.swift in Sources */,

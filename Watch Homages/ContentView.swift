@@ -8,7 +8,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             return List {
-                NavigationLink(destination: WatchFaceView(face: .han, showComplications: false, movement: .quartz)) {
+                NavigationLink(destination: WatchFaceView(face: .han, showComplications: true, movement: .quartz)) {
                     Text("Han Solo (quartz)")
                 }
                 NavigationLink(destination: WatchFaceView(face: .luke, showComplications: true, movement: .mechanical)) {
