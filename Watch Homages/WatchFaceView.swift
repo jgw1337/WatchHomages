@@ -8,8 +8,11 @@ struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
     
     var face: WatchFace = .han
-    var showComplications: Bool = false
     var movement: WatchMovement = .quartz
+
+    var showMonthsComplication: Bool = false
+    var showDaysComplication: Bool = false
+    var showSecondsComplication: Bool = false
     
     var body: some View {
         let month = self.thisTime.month
@@ -34,15 +37,17 @@ struct WatchFaceView: View {
                 .foregroundColor(Color.black)
                 .offset(x: 94)
             
-            if showComplications {
-                Image("\(face)_hands_complication")
-                    .rotationEffect(.degrees((weekday * 51.4)))
-                    .offset(y: -70)
-                
-                Image("\(face)_hands_complication")
-                    .rotationEffect(.degrees((month * 30)))
+            if showMonthsComplication {
+                MonthsView(face: face, month: month)
                     .offset(y: 70)
-                
+            }
+            
+            if showDaysComplication {
+                DaysView(face: face, weekday: weekday)
+                    .offset(y: -70)
+            }
+            
+            if showSecondsComplication {
                 SecondsView(face: face, second: second)
                     .offset(y: 70)
             }
@@ -52,13 +57,17 @@ struct WatchFaceView: View {
             
             Image("\(face)_hands_hour")
                 .rotationEffect(.degrees((hour * 30 + minute/2)))
-            
+
+            if !showSecondsComplication {
+                SecondsView(face: face, second: second, showAsComplication: false)
+            }
+
         }
     }
 }
 
 struct WatchFaceView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchFaceView(face: .luke, showComplications: true, movement: .mechanical)
+        WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: false, showDaysComplication: true, showSecondsComplication: true)
     }
 }

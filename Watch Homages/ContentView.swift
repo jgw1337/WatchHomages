@@ -8,13 +8,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             return List {
-                NavigationLink(destination: WatchFaceView(face: .han, showComplications: true, movement: .quartz)) {
+                NavigationLink(destination: WatchFaceView(face: .han, movement: .quartz, showMonthsComplication: false, showDaysComplication: false, showSecondsComplication: true)) {
                     Text("Han Solo (quartz)")
                 }
-                NavigationLink(destination: WatchFaceView(face: .luke, showComplications: true, movement: .mechanical)) {
+                NavigationLink(destination: WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: true, showDaysComplication: true)) {
                     Text("Luke Skywalker (mechanical)")
                 }
-                NavigationLink(destination: WatchFaceView(face: .boba_fett, showComplications: false, movement: .quartz)) {
+                NavigationLink(destination: WatchFaceView(face: .boba_fett, movement: .quartz)) {
                     Text("Boba Fett (quartz)")
                 }
             }

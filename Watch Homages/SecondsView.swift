@@ -9,22 +9,21 @@
 import SwiftUI
 
 struct SecondsView: View {
-    @ObservedObject var thisTime = TheTime()
-
     var face: WatchFace = .han
     var second: Double = 0
     var showAsComplication: Bool = false
 
     var body: some View {
-        let second = self.thisTime.secondQuartzMovement
-
         return ZStack{
             if showAsComplication {
                 Image("\(face)_watch_face_complication_second")
-            }
 
-            Image("\(face)_hands_second")
-                .rotationEffect(.degrees(second * 6))
+                Image("\(face)_hands_complication")
+                    .rotationEffect(.degrees(second * 6))
+            } else {
+                Image("\(face)_hands_second")
+                    .rotationEffect(.degrees(second * 6))
+            }
         }
     }
 }
