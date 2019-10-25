@@ -27,6 +27,7 @@ The smooth motion of the mechanical movement embodies the fluid grace of the Jed
 
 The smooth mechanical movement contrasts nicely with Boba Fett's digital readout.
 
+Sequence 1|Sequence 2|Sequence 3|Sequence 4|Sequence 5|Sequence 6|Sequence 7
 :---:|:---:|:---:|:---:|:---:|:---:|:---:
 ![Sequence 2](/readme/boba_fett_flair_1.png)|![Sequence 2](/readme/boba_fett_flair_2.png)|![Sequence 3](/readme/boba_fett_flair_3.png)|![Sequence 4](/readme/boba_fett_flair_4.png)|![Sequence 5](/readme/boba_fett_flair_5.png)|![Sequence 6](/readme/boba_fett_flair_6.png)|![Sequence 7](/readme/boba_fett_flair_7.png)|
 
