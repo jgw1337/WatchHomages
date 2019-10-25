@@ -9,11 +9,13 @@ struct WatchFaceView: View {
     
     var face: WatchFace = .han
     var movement: WatchMovement = .quartz
-
+    
     var showMonthsComplication: Bool = false
     var showDaysComplication: Bool = false
     var showSecondsComplication: Bool = false
-    
+    var showMilitaryTimeComplication: Bool = false
+    var showTachymeter: Bool = false
+
     var body: some View {
         let month = self.thisTime.month
         let weekday = self.thisTime.weekday
@@ -37,6 +39,11 @@ struct WatchFaceView: View {
                 .foregroundColor(Color.black)
                 .offset(x: 94)
             
+            if showMilitaryTimeComplication {
+                MilitaryTimeView(face: face, hour: hour)
+                    .offset(x: -60)
+            }
+
             if showMonthsComplication {
                 MonthsView(face: face, month: month)
                     .offset(y: 70)
@@ -50,6 +57,9 @@ struct WatchFaceView: View {
             if showSecondsComplication {
                 SecondsView(face: face, second: second)
                     .offset(y: 70)
+            } else {
+                SecondsView(face: face, second: second, showAsComplication: false)
+                .zIndex(50)
             }
             
             Image("\(face)_hands_minute")
@@ -57,17 +67,17 @@ struct WatchFaceView: View {
             
             Image("\(face)_hands_hour")
                 .rotationEffect(.degrees((hour * 30 + minute/2)))
-
-            if !showSecondsComplication {
-                SecondsView(face: face, second: second, showAsComplication: false)
+            
+            // Work-in-process
+            if showTachymeter {
+                TachymeterView(face: face)
             }
-
         }
     }
 }
 
 struct WatchFaceView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: false, showDaysComplication: true, showSecondsComplication: true)
+        WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: false, showDaysComplication: true, showSecondsComplication: true, showMilitaryTimeComplication: true, showTachymeter: true)
     }
 }

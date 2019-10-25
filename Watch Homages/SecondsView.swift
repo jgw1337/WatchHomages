@@ -11,7 +11,7 @@ import SwiftUI
 struct SecondsView: View {
     var face: WatchFace = .han
     var second: Double = 0
-    var showAsComplication: Bool = false
+    var showAsComplication: Bool = true
 
     var body: some View {
         return ZStack{

@@ -8,10 +8,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             return List {
-                NavigationLink(destination: WatchFaceView(face: .han, movement: .quartz, showMonthsComplication: false, showDaysComplication: false, showSecondsComplication: true)) {
+                NavigationLink(destination: WatchFaceView(face: .han, movement: .quartz, showMonthsComplication: false, showDaysComplication: false, showSecondsComplication: true, showTachymeter: true)) {
                     Text("Han Solo (quartz)")
                 }
-                NavigationLink(destination: WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: true, showDaysComplication: true)) {
+                NavigationLink(destination: WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: false, showDaysComplication: true, showSecondsComplication: true, showMilitaryTimeComplication: true, showTachymeter: true)) {
                     Text("Luke Skywalker (mechanical)")
                 }
                 NavigationLink(destination: WatchFaceView(face: .boba_fett, movement: .quartz)) {
