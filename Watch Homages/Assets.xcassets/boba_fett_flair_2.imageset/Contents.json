@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "boba_fett_watch_face.png",
+      "filename" : "boba_fett_flair_2.png",
       "scale" : "1x"
     },
     {
@@ -15,7 +15,7 @@
     },
     {
       "idiom" : "watch",
-      "filename" : "boba_fett_watch_face_black.png",
+      "filename" : "boba_fett_flair_2-1.png",
       "scale" : "2x"
     }
   ],

@@ -8,17 +8,38 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             return List {
-                NavigationLink(destination: WatchFaceView(face: .han, movement: .quartz, showMonthsComplication: false, showDaysComplication: false, showSecondsComplication: true, showTachymeter: true)) {
+                NavigationLink(destination:
+                    WatchFaceView(
+                        face: .han,
+                        movement: .quartz,
+                        showSecondsComplication: true,
+                        numberOfFlairComplications: 0,
+                        showTachymeter: true
+                )) {
                     Text("Han Solo (quartz)")
                 }
-                NavigationLink(destination: WatchFaceView(face: .luke, movement: .mechanical, showMonthsComplication: false, showDaysComplication: true, showSecondsComplication: true, showMilitaryTimeComplication: true, showTachymeter: true)) {
+                NavigationLink(destination:
+                    WatchFaceView(
+                        face: .luke,
+                        movement: .mechanical,
+                        showDaysComplication: true,
+                        showSecondsComplication: true,
+                        showMilitaryTimeComplication: true,
+                        numberOfFlairComplications: 0,
+                        showTachymeter: true
+                )) {
                     Text("Luke Skywalker (mechanical)")
                 }
-                NavigationLink(destination: WatchFaceView(face: .boba_fett, movement: .quartz)) {
+                NavigationLink(destination:
+                    WatchFaceView(
+                        face: .boba_fett,
+                        movement: .quartz,
+                        numberOfFlairComplications: 7
+                )) {
                     Text("Boba Fett (quartz)")
                 }
             }
-        .navigationBarTitle(Text("Watch Faces"))
+            .navigationBarTitle(Text("Watch Faces"))
         }
     }
 }

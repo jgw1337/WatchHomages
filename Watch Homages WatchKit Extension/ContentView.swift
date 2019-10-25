@@ -7,13 +7,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         List {
-            NavigationLink(destination: WatchFaceView(face: .han, showComplications: false, movement: .quartz)) {
+            NavigationLink(destination:
+                    WatchFaceView(
+                        face: .han,
+                        movement: .quartz,
+                        showSecondsComplication: true,
+                        numberOfFlairComplications: 0,
+                        showTachymeter: true
+                )) {
                 Text("Han (quartz)")
             }
-            NavigationLink(destination: WatchFaceView(face: .luke, showComplications: true, movement: .mechanical)) {
+            NavigationLink(destination:
+                    WatchFaceView(
+                        face: .luke,
+                        movement: .mechanical,
+                        showDaysComplication: true,
+                        showSecondsComplication: true,
+                        showMilitaryTimeComplication: true,
+                        numberOfFlairComplications: 0,
+                        showTachymeter: true
+                )) {
                 Text("Luke (mechanical)")
             }
-            NavigationLink(destination: WatchFaceView(face: .boba_fett, showComplications: false, movement: .quartz)) {
+            NavigationLink(destination:
+                WatchFaceView(
+                    face: .boba_fett,
+                    movement: .quartz,
+                    numberOfFlairComplications: 7
+            )) {
                 Text("Boba Fett (quartz)")
             }
         }
