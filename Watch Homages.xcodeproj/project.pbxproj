@@ -45,6 +45,14 @@
 		D3D7B1E32362D9B200F13925 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7B1E12362D99700F13925 /* FaceView.swift */; };
 		D3DB43D02362AAC500D8DD69 /* MilitaryTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */; };
 		D3DB43D22362ADA600D8DD69 /* TachymeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */; };
+		D3E858F42363AC0A002E85FD /* HanFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858F32363AC0A002E85FD /* HanFaceView.swift */; };
+		D3E858F62363B052002E85FD /* LukeFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858F52363B051002E85FD /* LukeFaceView.swift */; };
+		D3E858F82363B1BB002E85FD /* BobaFettFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858F72363B1BB002E85FD /* BobaFettFaceView.swift */; };
+		D3E858F92363B3D9002E85FD /* BobaFettFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858F72363B1BB002E85FD /* BobaFettFaceView.swift */; };
+		D3E858FA2363B3DC002E85FD /* LukeFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858F52363B051002E85FD /* LukeFaceView.swift */; };
+		D3E858FB2363B3DE002E85FD /* HanFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858F32363AC0A002E85FD /* HanFaceView.swift */; };
+		D3E858FD2363B447002E85FD /* GetFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858FC2363B447002E85FD /* GetFaceView.swift */; };
+		D3E858FE2363B4C8002E85FD /* GetFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E858FC2363B447002E85FD /* GetFaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +129,10 @@
 		D3D7B1E12362D99700F13925 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryTimeView.swift; sourceTree = "<group>"; };
 		D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TachymeterView.swift; sourceTree = "<group>"; };
+		D3E858F32363AC0A002E85FD /* HanFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanFaceView.swift; sourceTree = "<group>"; };
+		D3E858F52363B051002E85FD /* LukeFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LukeFaceView.swift; sourceTree = "<group>"; };
+		D3E858F72363B1BB002E85FD /* BobaFettFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFettFaceView.swift; sourceTree = "<group>"; };
+		D3E858FC2363B447002E85FD /* GetFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +176,8 @@
 		D3445009235A67730018FCDC /* Watch Homages */ = {
 			isa = PBXGroup;
 			children = (
+				D3E858F22363ABE0002E85FD /* Faces */,
+				D3E858F12363AA6B002E85FD /* Complications */,
 				D3445049235A74AB0018FCDC /* WatchFaceView.swift */,
 				D344500A235A67730018FCDC /* AppDelegate.swift */,
 				D344500C235A67730018FCDC /* SceneDelegate.swift */,
@@ -175,12 +189,6 @@
 				D344504B235A74C20018FCDC /* TheTime.swift */,
 				D3158190235C41D600D4BE81 /* WatchMovement.swift */,
 				D35FFF15235CCECC00D40F9A /* WatchFace.swift */,
-				D3A970422361582000D0C59A /* SecondsView.swift */,
-				D3A970442361749B00D0C59A /* MonthsView.swift */,
-				D3A97046236179CA00D0C59A /* DaysView.swift */,
-				D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */,
-				D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */,
-				D3D7B1D92362CBE600F13925 /* FlairView.swift */,
 				D3D7B1E12362D99700F13925 /* FaceView.swift */,
 			);
 			path = "Watch Homages";
@@ -224,6 +232,30 @@
 				D3445038235A67800018FCDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3E858F12363AA6B002E85FD /* Complications */ = {
+			isa = PBXGroup;
+			children = (
+				D3A970422361582000D0C59A /* SecondsView.swift */,
+				D3A970442361749B00D0C59A /* MonthsView.swift */,
+				D3A97046236179CA00D0C59A /* DaysView.swift */,
+				D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */,
+				D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */,
+				D3D7B1D92362CBE600F13925 /* FlairView.swift */,
+			);
+			path = Complications;
+			sourceTree = "<group>";
+		};
+		D3E858F22363ABE0002E85FD /* Faces */ = {
+			isa = PBXGroup;
+			children = (
+				D3E858F32363AC0A002E85FD /* HanFaceView.swift */,
+				D3E858F52363B051002E85FD /* LukeFaceView.swift */,
+				D3E858F72363B1BB002E85FD /* BobaFettFaceView.swift */,
+				D3E858FC2363B447002E85FD /* GetFaceView.swift */,
+			);
+			path = Faces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,11 +394,15 @@
 			files = (
 				D3D7B1DA2362CBE600F13925 /* FlairView.swift in Sources */,
 				D3DB43D22362ADA600D8DD69 /* TachymeterView.swift in Sources */,
+				D3E858F42363AC0A002E85FD /* HanFaceView.swift in Sources */,
 				D344504C235A74C20018FCDC /* TheTime.swift in Sources */,
 				D3A970452361749B00D0C59A /* MonthsView.swift in Sources */,
 				D344500B235A67730018FCDC /* AppDelegate.swift in Sources */,
 				D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */,
+				D3E858F82363B1BB002E85FD /* BobaFettFaceView.swift in Sources */,
+				D3E858FD2363B447002E85FD /* GetFaceView.swift in Sources */,
 				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
+				D3E858F62363B052002E85FD /* LukeFaceView.swift in Sources */,
 				D3A97047236179CA00D0C59A /* DaysView.swift in Sources */,
 				D3A970432361582000D0C59A /* SecondsView.swift in Sources */,
 				D3D7B1E22362D99700F13925 /* FaceView.swift in Sources */,
@@ -383,11 +419,15 @@
 			files = (
 				D3D7B1DC2362CEB400F13925 /* TachymeterView.swift in Sources */,
 				D3445052235A999C0018FCDC /* TheTime.swift in Sources */,
+				D3E858F92363B3D9002E85FD /* BobaFettFaceView.swift in Sources */,
 				D3445032235A677D0018FCDC /* HostingController.swift in Sources */,
 				D3445030235A677D0018FCDC /* ContentView.swift in Sources */,
 				D3D7B1DB2362CEAD00F13925 /* FlairView.swift in Sources */,
 				D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */,
 				D3158192235C420500D4BE81 /* WatchMovement.swift in Sources */,
+				D3E858FE2363B4C8002E85FD /* GetFaceView.swift in Sources */,
+				D3E858FA2363B3DC002E85FD /* LukeFaceView.swift in Sources */,
+				D3E858FB2363B3DE002E85FD /* HanFaceView.swift in Sources */,
 				D3D7B1DF2362CEBD00F13925 /* MonthsView.swift in Sources */,
 				D3D7B1DE2362CEBA00F13925 /* DaysView.swift in Sources */,
 				D3D7B1E32362D9B200F13925 /* FaceView.swift in Sources */,

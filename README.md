@@ -6,8 +6,8 @@ Since Apple Watch does not yet support custom watch faces, these watch faces are
 
 Selection|Han|Luke|Boba Fett
 :---:|:---:|:---:|:---:
-![Watch Selection](/readme/selection_watch.png)|![Han Watch](/readme/han_watch_sample.png)|![Luke Watch](/readme/luke_watch_sample.png)|![Boba Fett Watch](/readme/boba_fett_watch_sample.png)
-![Watch Selection](/readme/selection_iphone.png)|![Han Watch](/readme/han_iphone_sample.png)|![Luke Watch](/readme/luke_iphone_sample.png)|![Boba Fett Watch](/readme/boba_fett_iphone_sample.png)
+![Watch Selection](/readme/selection_watch.png)|![Han Watch](/readme/han_watch_sample+5.png)|![Luke Watch](/readme/luke_watch_sample+5.png)|![Boba Fett Watch](/readme/boba_fett_watch_sample+5.png)
+![Watch Selection](/readme/selection_iphone.png)|![Han Watch](/readme/han_iphone_sample+5.png)|![Luke Watch](/readme/luke_iphone_sample+5.png)|![Boba Fett Watch](/readme/boba_fett_iphone_sample+5.png)
 
 
 ## Watch Faces
@@ -34,6 +34,7 @@ Sequence 1|Sequence 2|Sequence 3|Sequence 4|Sequence 5|Sequence 6|Sequence 7
 
 * Implement "flair" for Boba Fett
 * Convert Boba Fett to mechanical movement
+* Reorganize views
 
 ### Thu, 24-Oct-2019
 

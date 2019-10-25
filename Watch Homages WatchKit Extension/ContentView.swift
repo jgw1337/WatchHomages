@@ -8,32 +8,26 @@ struct ContentView: View {
     var body: some View {
         List {
             NavigationLink(destination:
-                    WatchFaceView(
-                        face: .han,
-                        movement: .quartz,
-                        showSecondsComplication: true,
-                        numberOfFlairComplications: 0,
-                        showTachymeter: true
-                )) {
+                WatchFaceView(
+                    face: .han,
+                    movement: .quartz,
+                    showTachymeter: true
+            )) {
                 Text("Han (quartz)")
             }
             NavigationLink(destination:
-                    WatchFaceView(
-                        face: .luke,
-                        movement: .mechanical,
-                        showDaysComplication: true,
-                        showSecondsComplication: true,
-                        showMilitaryTimeComplication: true,
-                        numberOfFlairComplications: 0,
-                        showTachymeter: true
-                )) {
+                WatchFaceView(
+                    face: .luke,
+                    movement: .mechanical,
+                    showTachymeter: true
+            )) {
                 Text("Luke (mechanical)")
             }
             NavigationLink(destination:
                 WatchFaceView(
                     face: .boba_fett,
-                    movement: .quartz,
-                    numberOfFlairComplications: 7
+                    movement: .mechanical,
+                    showTachymeter: false
             )) {
                 Text("Boba Fett (mechanical)")
             }

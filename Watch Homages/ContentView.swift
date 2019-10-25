@@ -7,13 +7,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            return List {
+            List {
                 NavigationLink(destination:
                     WatchFaceView(
                         face: .han,
                         movement: .quartz,
-                        showSecondsComplication: true,
-                        numberOfFlairComplications: 0,
                         showTachymeter: true
                 )) {
                     Text("Han Solo (quartz)")
@@ -22,10 +20,6 @@ struct ContentView: View {
                     WatchFaceView(
                         face: .luke,
                         movement: .mechanical,
-                        showDaysComplication: true,
-                        showSecondsComplication: true,
-                        showMilitaryTimeComplication: true,
-                        numberOfFlairComplications: 0,
                         showTachymeter: true
                 )) {
                     Text("Luke Skywalker (mechanical)")
@@ -34,7 +28,7 @@ struct ContentView: View {
                     WatchFaceView(
                         face: .boba_fett,
                         movement: .mechanical,
-                        numberOfFlairComplications: 7
+                        showTachymeter: false
                 )) {
                     Text("Boba Fett (mechanical)")
                 }
