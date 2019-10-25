@@ -5,6 +5,7 @@ Watch faces inspired by Citizen's Star Wars line.
 Since Apple Watch does not yet support custom watch faces, these watch faces are simply apps that can run on iPhones and Apple Watches.
 
 Selection|Han|Luke|Boba Fett
+:---:|:---:|:---:|:---:
 ![Watch Selection](/readme/selection_watch.png)|![Han Watch](/readme/han_watch_sample.png)|![Luke Watch](/readme/luke_watch_sample.png)|![Boba Fett Watch](/readme/boba_fett_watch_sample.png)
 
 
