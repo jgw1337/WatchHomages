@@ -35,7 +35,7 @@ struct ContentView: View {
                     movement: .quartz,
                     numberOfFlairComplications: 7
             )) {
-                Text("Boba Fett (quartz)")
+                Text("Boba Fett (mechanical)")
             }
         }
         .navigationBarTitle(Text("Watch Faces"))

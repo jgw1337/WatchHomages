@@ -15,7 +15,10 @@ struct FlairView: View {
         imgNumber = imgNumber < 1 ? 1 : imgNumber
         imgNumber = imgNumber > numOfFaces ? numOfFaces : imgNumber
 
-        return Image("\(face)_flair_\(imgNumber)")
+        return ZStack {
+            Image("\(face)_flair_\(imgNumber)")
+                .animation(.spring())
+        }
     }
 }
 

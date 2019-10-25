@@ -22,15 +22,23 @@ struct WatchFaceView: View {
     var body: some View {
         let month: Double = self.thisTime.month
         let weekday: Double = self.thisTime.weekday
-        
+
         let hour: Double = self.thisTime.hour
         let minute: Double = self.thisTime.minute
         let second: Double = movement == .mechanical ?
             self.thisTime.secondMecahnicalMovement :
             self.thisTime.secondQuartzMovement
-        
+
         let day: Int = self.thisTime.day
-        
+
+        /*
+        For screenshots
+        let hour: Double = 10
+        let minute: Double = 10
+        let second: Double = 0
+        let day: Int = 15
+        */
+
         return ZStack {
             FaceView(face: face)
 

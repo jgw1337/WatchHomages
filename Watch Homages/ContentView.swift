@@ -33,10 +33,10 @@ struct ContentView: View {
                 NavigationLink(destination:
                     WatchFaceView(
                         face: .boba_fett,
-                        movement: .quartz,
+                        movement: .mechanical,
                         numberOfFlairComplications: 7
                 )) {
-                    Text("Boba Fett (quartz)")
+                    Text("Boba Fett (mechanical)")
                 }
             }
             .navigationBarTitle(Text("Watch Faces"))
