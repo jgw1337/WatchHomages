@@ -10,14 +10,24 @@ struct FlairView: View {
     var numOfFlairs: Int = 7
     
     var body: some View {
-        //TODO: Currently changes every second; can I set it to change every 4 secs?
-        var imgNumber = Int(second) % numOfFlairs
-        imgNumber = imgNumber < 1 ? 1 : imgNumber
-        imgNumber = imgNumber > numOfFlairs ? numOfFlairs : imgNumber
-
+        var imgNumber: Int
+        
+        // Image changes every: One second
+        imgNumber = (Int(second) % numOfFlairs) + 1
+        
         return ZStack {
             Image("\(face)_flair_\(imgNumber)")
                 .animation(.spring())
+            
+            // Debugging
+            /*
+            Text("imgNumber: \(String(imgNumber));\nsecond: \(String(second))")
+                .font(.title)
+                .foregroundColor(.green)
+                .frame(width:150)
+                .lineLimit(5)
+                .offset(x: -50)
+            */
         }
     }
 }

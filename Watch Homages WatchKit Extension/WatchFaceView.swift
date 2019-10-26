@@ -9,14 +9,6 @@ struct WatchFaceView: View {
     
     var face: WatchFace = .han
     var movement: WatchMovement = .quartz
-    
-    var showMonthsComplication: Bool = false
-    var showDaysComplication: Bool = false
-    var showSecondsComplication: Bool = false
-    var showMilitaryTimeComplication: Bool = false
-    
-    var numberOfFlairComplications: Int = 0
-    
     var showTachymeter: Bool = false
     
     var body: some View {
@@ -32,12 +24,12 @@ struct WatchFaceView: View {
         let day: Int = self.thisTime.day
         
         /*
-         For screenshots
-         let hour: Double = 10
-         let minute: Double = 10
-         let second: Double = 0
-         let day: Int = 15
-         */
+        For screenshots
+        let hour: Double = 10
+        let minute: Double = 10
+        let second: Double = 0
+        let day: Int = 15
+        */
         
         return ZStack {
             GetFaceView(
@@ -63,6 +55,12 @@ struct WatchFaceView: View {
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minute * 6))
             
+            // TODO: Temporary kludge to ensure Fett's second hand is on top
+            if face == .boba_fett {
+                SecondsView(face: face, second: second, showAsComplication: false)
+                    .zIndex(50)
+            }
+
             // TODO: Work-in-process
             if showTachymeter {
                 TachymeterView(face: face)

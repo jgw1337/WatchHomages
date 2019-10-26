@@ -8,25 +8,39 @@
 
 import SwiftUI
 
-func GetFaceView(face: WatchFace,
-                 month: Double,
-                 weekday: Double,
-                 hour: Double,
-                 minute: Double,
-                 second: Double,
-                 day: Int,
-                 isWatch: Bool
-                ) -> AnyView {
+func GetFaceView(
+    face: WatchFace,
+    month: Double,
+    weekday: Double,
+    hour: Double,
+    minute: Double,
+    second: Double,
+    day: Int,
+    isWatch: Bool
+) -> AnyView {
     switch face {
     case .han:
-        return AnyView(HanFaceView(second: second, isWatch: isWatch))
+        return AnyView(
+            HanFaceView(
+                second: second,
+                isWatch: isWatch
+            )
+        )
     case .luke:
-        return AnyView(LukeFaceView(weekday: weekday, hour: hour, second: second, isWatch: isWatch))
+        return AnyView(
+            LukeFaceView(
+                weekday: weekday,
+                hour: hour,
+                second: second,
+                isWatch: isWatch
+            )
+        )
     case .boba_fett:
-        return AnyView(BobaFettFaceView(second: second, isWatch: isWatch))
-    /*
-    default:
-        return AnyView(HanFaceView())
-    */
+        return AnyView(
+            BobaFettFaceView(
+                second: second,
+                isWatch: isWatch
+            )
+        )
     }
 }
