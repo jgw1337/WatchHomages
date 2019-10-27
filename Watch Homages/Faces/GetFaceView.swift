@@ -22,6 +22,10 @@ func GetFaceView(
     case .han:
         return AnyView(
             HanFaceView(
+                month: month,
+                weekday: weekday,
+                hour: hour,
+                minute: minute,
                 second: second,
                 isWatch: isWatch
             )
@@ -29,8 +33,10 @@ func GetFaceView(
     case .luke:
         return AnyView(
             LukeFaceView(
+                month: month,
                 weekday: weekday,
                 hour: hour,
+                minute: minute,
                 second: second,
                 isWatch: isWatch
             )
@@ -38,6 +44,10 @@ func GetFaceView(
     case .boba_fett:
         return AnyView(
             BobaFettFaceView(
+                month: month,
+                weekday: weekday,
+                hour: hour,
+                minute: minute,
                 second: second,
                 isWatch: isWatch
             )

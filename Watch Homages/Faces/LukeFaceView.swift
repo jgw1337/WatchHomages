@@ -9,8 +9,10 @@
 import SwiftUI
 
 struct LukeFaceView: View {
+    var month: Double = 0
     var weekday: Double = 0
     var hour: Double = 0
+    var minute: Double = 0
     var second: Double = 0
     var isWatch: Bool = true
 
@@ -26,10 +28,8 @@ struct LukeFaceView: View {
                 .offset(y: -yOffet)
 
             /*
-            if showMonthsComplication {
-                MonthsView(face: face, month: month)
-                    .offset(y: yOffet)
-            }
+            MonthsView(face: face, month: month)
+                .offset(y: yOffet)
             */
             
             SecondsView(face: face, second: second)
@@ -37,6 +37,13 @@ struct LukeFaceView: View {
 
             MilitaryTimeView(face: face, hour: hour)
                 .offset(x: xOffet)
+
+            Image("\(face)_hands_hour")
+                .rotationEffect(.degrees((hour * 30 + minute / 2)))
+            
+            Image("\(face)_hands_minute")
+                .rotationEffect(.degrees(minute * 6))
+            
         }
     }
 }

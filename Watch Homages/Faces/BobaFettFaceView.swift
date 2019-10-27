@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct BobaFettFaceView: View {
+    var month: Double = 0
+    var weekday: Double = 0
+    var hour: Double = 0
+    var minute: Double = 0
     var second: Double = 0
     var isWatch: Bool = true
-    
+
     var body: some View {
         let face: WatchFace = .boba_fett
         let xOffset: CGFloat = isWatch ? 47 : 94
@@ -23,11 +27,14 @@ struct BobaFettFaceView: View {
             FlairView(face: face, second: second, numOfFlairs: 7)
                 .offset(x: xOffset, y: yOffset)
             
-            // TODO: The second hand (in this view) appears below the min/hr hands (in the parent view)
-            /*
+            Image("\(face)_hands_hour")
+                .rotationEffect(.degrees((hour * 30 + minute / 2)))
+            
+            Image("\(face)_hands_minute")
+                .rotationEffect(.degrees(minute * 6))
+            
             SecondsView(face: face, second: second, showAsComplication: false)
-                .zIndex(100)
-            */
+                .zIndex(50)
         }
     }
 }

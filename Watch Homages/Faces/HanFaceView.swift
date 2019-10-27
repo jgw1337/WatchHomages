@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct HanFaceView: View {
+    var month: Double = 0
+    var weekday: Double = 0
+    var hour: Double = 0
+    var minute: Double = 0
     var second: Double = 0
     var isWatch: Bool = true
-    
+
     var body: some View {
         let face: WatchFace = .han
         let yOffset: CGFloat = isWatch ? 35 : 70
@@ -21,6 +25,13 @@ struct HanFaceView: View {
             
             SecondsView(face: face, second: second)
                 .offset(y: yOffset)
+
+            Image("\(face)_hands_hour")
+                .rotationEffect(.degrees((hour * 30 + minute / 2)))
+            
+            Image("\(face)_hands_minute")
+                .rotationEffect(.degrees(minute * 6))
+            
         }
     }
 }
