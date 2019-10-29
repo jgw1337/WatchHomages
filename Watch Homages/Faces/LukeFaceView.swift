@@ -40,9 +40,11 @@ struct LukeFaceView: View {
 
             Image("\(face)_hands_hour")
                 .rotationEffect(.degrees((hour * 30 + minute / 2)))
+                .zIndex(10)
             
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minute * 6))
+                .zIndex(20)
             
         }
     }

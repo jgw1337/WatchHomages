@@ -7,6 +7,9 @@ import SwiftUI
 struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
     
+    @State private var myTime1 = 0
+    var timer1 = Timer.publish(every: 1.0, on: .current, in: .common).autoconnect()
+    
     var face: WatchFace = .han
     var movement: WatchMovement = .quartz
     var showTachymeter: Bool = false
@@ -24,12 +27,12 @@ struct WatchFaceView: View {
         let day: Int = self.thisTime.day
         
         /*
-        For screenshots
-        let hour: Double = 10
-        let minute: Double = 10
-        let second: Double = 0
-        let day: Int = 15
-        */
+         For screenshots
+         let hour: Double = 10
+         let minute: Double = 10
+         let second: Double = 0
+         let day: Int = 15
+         */
         
         return ZStack {
             GetFaceView(
@@ -48,10 +51,17 @@ struct WatchFaceView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color.black)
                 .offset(x: 94)
-
+            
             // TODO: Work-in-process
             if showTachymeter {
                 TachymeterView(face: face)
+            }
+            
+            Text("\(self.myTime1)")
+                .font(.largeTitle)
+                .foregroundColor(.red)
+                .onReceive(timer1) {_ in
+                    self.myTime1 += 1
             }
         }
     }
