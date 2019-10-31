@@ -1,8 +1,4 @@
 //
-//  BobaFettFaceView.swift
-//  Watch Homages
-//
-//  Created by Dilek Sanver-Wang on 10/25/19.
 //  Copyright © 2019 jgw. All rights reserved.
 //
 

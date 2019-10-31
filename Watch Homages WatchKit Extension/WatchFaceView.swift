@@ -61,10 +61,6 @@ struct WatchFaceView: View {
                     .zIndex(50)
             }
 
-            // TODO: Work-in-process
-            if showTachymeter {
-                TachymeterView(face: face)
-            }
         }
         .offset(y: 15)
     }

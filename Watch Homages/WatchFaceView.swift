@@ -6,10 +6,12 @@ import SwiftUI
 
 struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
-    
+
+    /*
     @State private var myTime1 = 0
     var timer1 = Timer.publish(every: 1.0, on: .current, in: .common).autoconnect()
-    
+    */
+
     var face: WatchFace = .han
     var movement: WatchMovement = .quartz
     var showTachymeter: Bool = false
@@ -45,7 +47,7 @@ struct WatchFaceView: View {
                 day: day,
                 isWatch: false
             )
-            
+
             Text(String(day))
                 .font(.title)
                 .fontWeight(.bold)
@@ -53,16 +55,26 @@ struct WatchFaceView: View {
                 .offset(x: 94)
             
             // TODO: Work-in-process
+            /*
             if showTachymeter {
                 TachymeterView(face: face)
             }
+            */
             
+            Image("\(face)_hands_hour")
+                .rotationEffect(.degrees((hour * 30 + minute / 2)))
+            
+            Image("\(face)_hands_minute")
+                .rotationEffect(.degrees(minute * 6))
+
+            /*
             Text("\(self.myTime1)")
                 .font(.largeTitle)
                 .foregroundColor(.red)
                 .onReceive(timer1) {_ in
                     self.myTime1 += 1
-            }
+                }
+            */
         }
     }
 }
