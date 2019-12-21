@@ -13,7 +13,9 @@ struct BobaFettFaceView: View {
     var weekday: Double = 0
     var hour: Double = 0
     var minute: Double = 0
-    var second: Double = 0
+    var secondMechanicalMovement: Double = 0
+    var secondQuartzMovement: Double = 0
+    var millisecondsSince1970: Double = 0
     var isWatch: Bool = true
 
     var body: some View {
@@ -24,7 +26,7 @@ struct BobaFettFaceView: View {
         return ZStack {
             FaceView(face: face)
             
-            FlairView(face: face, second: second, numOfFlairs: 7)
+            FlairView(face: face, second: secondQuartzMovement, numOfFlairs: 7)
                 .offset(x: xOffset, y: yOffset)
             
             Image("\(face)_hands_hour")
@@ -33,7 +35,7 @@ struct BobaFettFaceView: View {
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minute * 6))
             
-            SecondsView(face: face, second: second, showAsComplication: false)
+            SecondsView(face: face, second: secondMechanicalMovement, showAsComplication: false)
                 .zIndex(50)
         }
     }

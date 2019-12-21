@@ -9,7 +9,7 @@ class TheTime: ObservableObject {
     @Published var hour = Double()
     @Published var minute = Double()
     @Published var secondQuartzMovement = Double()
-    @Published var secondMecahnicalMovement = Double()
+    @Published var secondMechanicalMovement = Double()
     
     @Published var month = Double()
     @Published var weekday = Double()
@@ -27,7 +27,7 @@ class TheTime: ObservableObject {
             let second = Double(myCalendar.component(.second, from: myDate))
             let nanosecond = Double(myCalendar.component(.nanosecond, from: myDate))
             self.secondQuartzMovement = second
-            self.secondMecahnicalMovement = second + (nanosecond / 1000000000)
+            self.secondMechanicalMovement = second + (nanosecond / 1000000000)
 
             self.month = Double(myCalendar.component(.month, from: myDate))
             self.weekday = Double(myCalendar.component(.weekday, from: myDate))

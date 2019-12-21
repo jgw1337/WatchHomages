@@ -13,7 +13,9 @@ struct HanFaceView: View {
     var weekday: Double = 0
     var hour: Double = 0
     var minute: Double = 0
-    var second: Double = 0
+    var secondMechanicalMovement: Double = 0
+    var secondQuartzMovement: Double = 0
+    var millisecondsSince1970: Double = 0
     var isWatch: Bool = true
 
     var body: some View {
@@ -23,7 +25,7 @@ struct HanFaceView: View {
         return ZStack {
             FaceView(face: face)
             
-            SecondsView(face: face, second: second)
+            SecondsView(face: face, second: secondQuartzMovement)
                 .offset(y: yOffset)
 
             Image("\(face)_hands_hour")

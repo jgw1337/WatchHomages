@@ -6,14 +6,19 @@ import SwiftUI
 
 struct TachymeterView: View {
     var face: WatchFace = .han
+    var millisecondsSince1970: Double
+
 
     var body: some View {
-        Image("\(face)_hands_second")
+        Text("\(millisecondsSince1970)")
+            .foregroundColor(.red)
+            .font(.subheadline)
+            .offset(x: -140, y: -150)
     }
 }
 
 struct TachymeterView_Previews: PreviewProvider {
     static var previews: some View {
-        TachymeterView()
+        TachymeterView(face: .han, millisecondsSince1970: 35)
     }
 }

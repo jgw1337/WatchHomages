@@ -6,10 +6,9 @@ import SwiftUI
 
 struct WatchFaceView: View {
     @ObservedObject var thisTime = TheTime()
-    
+    @ObservedObject var thisChrono = TheChronometer()
+
     var face: WatchFace = .han
-    var movement: WatchMovement = .quartz
-    var showTachymeter: Bool = false
     
     var body: some View {
         let month: Double = self.thisTime.month
@@ -17,12 +16,13 @@ struct WatchFaceView: View {
         
         let hour: Double = self.thisTime.hour
         let minute: Double = self.thisTime.minute
-        let second: Double = movement == .mechanical ?
-            self.thisTime.secondMecahnicalMovement :
-            self.thisTime.secondQuartzMovement
-        
+        let secondMechanicalMovement: Double = self.thisTime.secondMechanicalMovement
+        let secondQuartzMovement: Double = self.thisTime.secondQuartzMovement
+
         let day: Int = self.thisTime.day
         
+        let millisecondsSince1970: Double = self.thisChrono.millisecondsSince1970
+
         /*
         For screenshots
         let hour: Double = 10
@@ -38,8 +38,10 @@ struct WatchFaceView: View {
                 weekday: weekday,
                 hour: hour,
                 minute: minute,
-                second: second,
+                secondMechanicalMovement: secondMechanicalMovement,
+                secondQuartzMovement: secondQuartzMovement,
                 day: day,
+                millisecondsSince1970: millisecondsSince1970,
                 isWatch: true
             )
             
@@ -55,16 +57,6 @@ struct WatchFaceView: View {
             Image("\(face)_hands_minute")
                 .rotationEffect(.degrees(minute * 6))
             
-            // TODO: Temporary kludge to ensure Fett's second hand is on top
-            if face == .boba_fett {
-                SecondsView(face: face, second: second, showAsComplication: false)
-                    .zIndex(50)
-            }
-
-            // TODO: Work-in-process
-            if showTachymeter {
-                TachymeterView(face: face)
-            }
         }
         .offset(y: 15)
     }
@@ -73,9 +65,7 @@ struct WatchFaceView: View {
 struct WatchFaceView_Previews: PreviewProvider {
     static var previews: some View {
         WatchFaceView(
-            face: .boba_fett,
-            movement: .quartz,
-            showTachymeter: false
+            face: .boba_fett
         )
     }
 }

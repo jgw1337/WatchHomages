@@ -14,8 +14,10 @@ func GetFaceView(
     weekday: Double,
     hour: Double,
     minute: Double,
-    second: Double,
+    secondMechanicalMovement: Double,
+    secondQuartzMovement: Double,
     day: Int,
+    millisecondsSince1970: Double,
     isWatch: Bool
 ) -> AnyView {
     switch face {
@@ -26,7 +28,9 @@ func GetFaceView(
                 weekday: weekday,
                 hour: hour,
                 minute: minute,
-                second: second,
+                secondMechanicalMovement: secondMechanicalMovement,
+                secondQuartzMovement: secondQuartzMovement,
+                millisecondsSince1970: millisecondsSince1970,
                 isWatch: isWatch
             )
         )
@@ -37,7 +41,9 @@ func GetFaceView(
                 weekday: weekday,
                 hour: hour,
                 minute: minute,
-                second: second,
+                secondMechanicalMovement: secondMechanicalMovement,
+                secondQuartzMovement: secondQuartzMovement,
+                millisecondsSince1970: millisecondsSince1970,
                 isWatch: isWatch
             )
         )
@@ -48,7 +54,9 @@ func GetFaceView(
                 weekday: weekday,
                 hour: hour,
                 minute: minute,
-                second: second,
+                secondMechanicalMovement: secondMechanicalMovement,
+                secondQuartzMovement: secondQuartzMovement,
+                millisecondsSince1970: millisecondsSince1970,
                 isWatch: isWatch
             )
         )

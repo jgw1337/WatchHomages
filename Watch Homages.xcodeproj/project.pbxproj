@@ -34,6 +34,8 @@
 		D3A970432361582000D0C59A /* SecondsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A970422361582000D0C59A /* SecondsView.swift */; };
 		D3A970452361749B00D0C59A /* MonthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A970442361749B00D0C59A /* MonthsView.swift */; };
 		D3A97047236179CA00D0C59A /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A97046236179CA00D0C59A /* DaysView.swift */; };
+		D3B00ADF23754DA300FB9B1F /* TheChronometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE717E23754BC0008E636F /* TheChronometer.swift */; };
+		D3BE717F23754BC0008E636F /* TheChronometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE717E23754BC0008E636F /* TheChronometer.swift */; };
 		D3D7B1DA2362CBE600F13925 /* FlairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7B1D92362CBE600F13925 /* FlairView.swift */; };
 		D3D7B1DB2362CEAD00F13925 /* FlairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7B1D92362CBE600F13925 /* FlairView.swift */; };
 		D3D7B1DC2362CEB400F13925 /* TachymeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */; };
@@ -125,6 +127,7 @@
 		D3A970422361582000D0C59A /* SecondsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsView.swift; sourceTree = "<group>"; };
 		D3A970442361749B00D0C59A /* MonthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsView.swift; sourceTree = "<group>"; };
 		D3A97046236179CA00D0C59A /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
+		D3BE717E23754BC0008E636F /* TheChronometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheChronometer.swift; sourceTree = "<group>"; };
 		D3D7B1D92362CBE600F13925 /* FlairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlairView.swift; sourceTree = "<group>"; };
 		D3D7B1E12362D99700F13925 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryTimeView.swift; sourceTree = "<group>"; };
@@ -190,6 +193,7 @@
 				D3158190235C41D600D4BE81 /* WatchMovement.swift */,
 				D35FFF15235CCECC00D40F9A /* WatchFace.swift */,
 				D3D7B1E12362D99700F13925 /* FaceView.swift */,
+				D3BE717E23754BC0008E636F /* TheChronometer.swift */,
 			);
 			path = "Watch Homages";
 			sourceTree = "<group>";
@@ -404,6 +408,7 @@
 				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
 				D3E858F62363B052002E85FD /* LukeFaceView.swift in Sources */,
 				D3A97047236179CA00D0C59A /* DaysView.swift in Sources */,
+				D3BE717F23754BC0008E636F /* TheChronometer.swift in Sources */,
 				D3A970432361582000D0C59A /* SecondsView.swift in Sources */,
 				D3D7B1E22362D99700F13925 /* FaceView.swift in Sources */,
 				D3158191235C41D600D4BE81 /* WatchMovement.swift in Sources */,
@@ -429,6 +434,7 @@
 				D3E858FA2363B3DC002E85FD /* LukeFaceView.swift in Sources */,
 				D3E858FB2363B3DE002E85FD /* HanFaceView.swift in Sources */,
 				D3D7B1DF2362CEBD00F13925 /* MonthsView.swift in Sources */,
+				D3B00ADF23754DA300FB9B1F /* TheChronometer.swift in Sources */,
 				D3D7B1DE2362CEBA00F13925 /* DaysView.swift in Sources */,
 				D3D7B1E32362D9B200F13925 /* FaceView.swift in Sources */,
 				D3D7B1E02362CEBF00F13925 /* SecondsView.swift in Sources */,

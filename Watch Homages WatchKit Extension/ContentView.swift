@@ -9,25 +9,19 @@ struct ContentView: View {
         List {
             NavigationLink(destination:
                 WatchFaceView(
-                    face: .han,
-                    movement: .quartz,
-                    showTachymeter: true
+                    face: .han
             )) {
                 Text("Han (quartz)")
             }
             NavigationLink(destination:
                 WatchFaceView(
-                    face: .luke,
-                    movement: .mechanical,
-                    showTachymeter: true
+                    face: .luke
             )) {
                 Text("Luke (mechanical)")
             }
             NavigationLink(destination:
                 WatchFaceView(
-                    face: .boba_fett,
-                    movement: .mechanical,
-                    showTachymeter: false
+                    face: .boba_fett
             )) {
                 Text("Boba Fett (mechanical)")
             }
