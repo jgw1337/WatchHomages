@@ -56,7 +56,7 @@ struct WatchFaceView: View {
                 .rotationEffect(.degrees(minute * 6))
             
             // TODO: Temporary kludge to ensure Fett's second hand is on top
-            if face == .boba_fett {
+            if face == .boba_fett || face == .minority_report {
                 SecondsView(face: face, second: second, showAsComplication: false)
                     .zIndex(50)
             }

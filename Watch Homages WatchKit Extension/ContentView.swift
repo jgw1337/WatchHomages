@@ -31,6 +31,14 @@ struct ContentView: View {
             )) {
                 Text("Boba Fett (mechanical)")
             }
+            NavigationLink(destination:
+                WatchFaceView(
+                    face: .minority_report,
+                    movement: .mechanical,
+                    showTachymeter: false
+            )) {
+                Text("Minority Report (mechanical)")
+            }
         }
         .navigationBarTitle(Text("Watch Faces"))
     }

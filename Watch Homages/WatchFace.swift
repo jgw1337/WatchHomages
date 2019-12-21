@@ -3,5 +3,5 @@
 //
 
 enum WatchFace {
-    case han, luke, boba_fett
+    case han, luke, boba_fett, minority_report
 }

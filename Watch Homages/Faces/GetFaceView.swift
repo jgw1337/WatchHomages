@@ -42,5 +42,12 @@ func GetFaceView(
                 isWatch: isWatch
             )
         )
+    case .minority_report:
+        return AnyView(
+            MinorityReportView(
+                second: second,
+                isWatch: isWatch
+            )
+        )
     }
 }
