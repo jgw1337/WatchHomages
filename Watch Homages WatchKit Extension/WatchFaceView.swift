@@ -73,7 +73,7 @@ struct WatchFaceView: View {
 struct WatchFaceView_Previews: PreviewProvider {
     static var previews: some View {
         WatchFaceView(
-            face: .boba_fett,
+            face: .minority_report,
             movement: .quartz,
             showTachymeter: false
         )

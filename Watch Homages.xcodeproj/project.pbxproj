@@ -34,6 +34,8 @@
 		D3A970432361582000D0C59A /* SecondsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A970422361582000D0C59A /* SecondsView.swift */; };
 		D3A970452361749B00D0C59A /* MonthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A970442361749B00D0C59A /* MonthsView.swift */; };
 		D3A97047236179CA00D0C59A /* DaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A97046236179CA00D0C59A /* DaysView.swift */; };
+		D3C46FD823AEE91B002E2B84 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C46FD723AEE91B002E2B84 /* TimeView.swift */; };
+		D3C46FD923AEEA8D002E2B84 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C46FD723AEE91B002E2B84 /* TimeView.swift */; };
 		D3D7B1DA2362CBE600F13925 /* FlairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7B1D92362CBE600F13925 /* FlairView.swift */; };
 		D3D7B1DB2362CEAD00F13925 /* FlairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D7B1D92362CBE600F13925 /* FlairView.swift */; };
 		D3D7B1DC2362CEB400F13925 /* TachymeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */; };
@@ -127,6 +129,7 @@
 		D3A970422361582000D0C59A /* SecondsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondsView.swift; sourceTree = "<group>"; };
 		D3A970442361749B00D0C59A /* MonthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsView.swift; sourceTree = "<group>"; };
 		D3A97046236179CA00D0C59A /* DaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysView.swift; sourceTree = "<group>"; };
+		D3C46FD723AEE91B002E2B84 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 		D3D7B1D92362CBE600F13925 /* FlairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlairView.swift; sourceTree = "<group>"; };
 		D3D7B1E12362D99700F13925 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryTimeView.swift; sourceTree = "<group>"; };
@@ -245,6 +248,7 @@
 				D3A97046236179CA00D0C59A /* DaysView.swift */,
 				D3DB43CF2362AAC500D8DD69 /* MilitaryTimeView.swift */,
 				D3DB43D12362ADA600D8DD69 /* TachymeterView.swift */,
+				D3C46FD723AEE91B002E2B84 /* TimeView.swift */,
 				D3D7B1D92362CBE600F13925 /* FlairView.swift */,
 			);
 			path = Complications;
@@ -403,6 +407,7 @@
 				D3A970452361749B00D0C59A /* MonthsView.swift in Sources */,
 				D344500B235A67730018FCDC /* AppDelegate.swift in Sources */,
 				D344500D235A67730018FCDC /* SceneDelegate.swift in Sources */,
+				D3C46FD823AEE91B002E2B84 /* TimeView.swift in Sources */,
 				D3E858F82363B1BB002E85FD /* BobaFettFaceView.swift in Sources */,
 				D3E858FD2363B447002E85FD /* GetFaceView.swift in Sources */,
 				D344504A235A74AB0018FCDC /* WatchFaceView.swift in Sources */,
@@ -429,6 +434,7 @@
 				D3445030235A677D0018FCDC /* ContentView.swift in Sources */,
 				D3D7B1DB2362CEAD00F13925 /* FlairView.swift in Sources */,
 				D344504E235A974B0018FCDC /* WatchFaceView.swift in Sources */,
+				D3C46FD923AEEA8D002E2B84 /* TimeView.swift in Sources */,
 				D3158192235C420500D4BE81 /* WatchMovement.swift in Sources */,
 				D3E858FE2363B4C8002E85FD /* GetFaceView.swift in Sources */,
 				D3E858FA2363B3DC002E85FD /* LukeFaceView.swift in Sources */,
