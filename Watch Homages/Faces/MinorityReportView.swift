@@ -22,19 +22,19 @@ struct MinorityReportView: View {
         return ZStack {
             FaceView(face: face)
             
-            TimeView(hour: hour, minute: minute, second: second)
+            MinorityReportTimeView(hour: hour, minute: minute, second: second)
                 .scaleEffect(0.8)
                 .foregroundColor(.gray)
                 .opacity(0.33)
                 .offset(y: 20)
 
-            TimeView(hour: hour, minute: minute, second: second)
+            MinorityReportTimeView(hour: hour, minute: minute, second: second)
                 .scaleEffect(0.9)
                 .foregroundColor(.gray)
                 .opacity(0.66)
                 .offset(y: 10)
 
-            TimeView(hour: hour, minute: minute, second: second)
+            MinorityReportTimeView(hour: hour, minute: minute, second: second)
                 .foregroundColor(.white)
         }
     }

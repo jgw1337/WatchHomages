@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct TimeView: View {
+struct MinorityReportTimeView: View {
     var hour: Double = 0
     var minute: Double = 0
     var second: Double = 0
@@ -35,7 +35,7 @@ struct TimeView: View {
                 .padding(.leading, 3)
 
             Text("SEC")
-                .font(.system(size: 12))
+                .font(.system(size: 10))
 
             Spacer()
         }
@@ -45,6 +45,6 @@ struct TimeView: View {
 
 struct TimeView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeView()
+        MinorityReportTimeView()
     }
 }
